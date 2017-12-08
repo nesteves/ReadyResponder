@@ -98,7 +98,7 @@ class Person < ActiveRecord::Base
   end
 
   def title_order
-    title_order = TITLE_ORDER[title] || DEFAULT_TITLE_ORDER
+    TITLE_ORDER[title] || DEFAULT_TITLE_ORDER
   end
 
   def name
